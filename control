@@ -1,6 +1,6 @@
 Package: me.devbug.quicklock46
 Name: quicklock46
-Depends: mobilesubstrate, firmware (>= 6.0), firmware (<< 7.0)
+Depends: mobilesubstrate, firmware (>= 6.0), firmware (<< 7.1)
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: Just touch to lock your device!
