@@ -14,7 +14,7 @@ include $(THEOS_MAKE_PATH)/application.mk
 ri:: remoteinstall
 remoteinstall:: all internal-remoteinstall after-remoteinstall
 internal-remoteinstall::
-	scp -P 22 "$(FW_PROJECT_DIR)/obj/$(APPLICATION_NAME).app/$(APPLICATION_NAME)" root@$(FW_DEVICE_IP):
+	scp -P 22 "$(FW_PROJECT_DIR)/$(THEOS_OBJ_DIR_NAME)/$(APPLICATION_NAME).app/$(APPLICATION_NAME)" root@$(FW_DEVICE_IP):
 	ssh root@$(FW_DEVICE_IP) "mv $(APPLICATION_NAME) /Applications/$(APPLICATION_NAME).app/"
 after-remoteinstall::
 	ssh root@$(FW_DEVICE_IP) "killall -9 SpringBoard"

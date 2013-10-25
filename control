@@ -4,7 +4,7 @@ Depends: mobilesubstrate, firmware (>= 6.0), firmware (<< 7.1)
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: Just touch to lock your device!
- This package supports only iOS 6.
+ This package supports iOS 6 and iOS 7.0.x
 Maintainer: deVbug <devbug@devbug.me>
 Author: deVbug <devbug@devbug.me>
 Section: Utilities
