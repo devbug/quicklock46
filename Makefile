@@ -1,6 +1,7 @@
 FW_DEVICE_IP=192.168.1.4
-ARCHS = armv7
-TARGET = iphone:clang:5.0:5.0
+ARCHS = armv7 armv7s
+TARGET = iphone:clang::6.0
+SDKVERSION = 6.0
 
 SUBPROJECTS = Apps Helper
 
