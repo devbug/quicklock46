@@ -1,6 +1,5 @@
 FW_DEVICE_IP = 192.168.1.4
-ARCHS = armv7 armv7s
-TARGET = iphone:clang::6.0
+ARCHS = armv7 armv7s arm64
 
 include theos/makefiles/common.mk
 
