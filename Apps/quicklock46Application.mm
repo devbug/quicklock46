@@ -1,3 +1,4 @@
+#import <AudioToolbox/AudioToolbox.h>
 #import "RootViewController.h"
 
 #import <unistd.h>
@@ -16,6 +17,9 @@
 	_viewController = [[RootViewController alloc] init];
 	[_window addSubview:_viewController.view];
 	[_window makeKeyAndVisible];
+	
+	// play lock sound
+	AudioServicesPlaySystemSound(1100);
 	
 	[self performSelector:@selector(exitMyself) withObject:nil afterDelay:1.0f];
 }
