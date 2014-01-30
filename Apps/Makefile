@@ -5,7 +5,7 @@ include theos/makefiles/common.mk
 
 APPLICATION_NAME = quicklock46
 quicklock46_FILES = main.m quicklock46Application.mm RootViewController.mm
-quicklock46_FRAMEWORKS = UIKit CoreGraphics
+quicklock46_FRAMEWORKS = UIKit CoreGraphics AudioToolbox
 quicklock46_CFLAGS = -fno-objc-arc
 
 include $(THEOS_MAKE_PATH)/application.mk
