@@ -5,6 +5,8 @@ Version: 0.0.1
 Architecture: iphoneos-arm
 Description: Just touch to lock your device!
  This package supports iOS 6 and iOS 7.x
+ 
+ Thanks @skyer9
 Maintainer: deVbug <devbug@devbug.me>
 Author: deVbug <devbug@devbug.me>
 Section: Utilities
