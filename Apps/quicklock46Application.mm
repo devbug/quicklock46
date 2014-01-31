@@ -18,8 +18,12 @@
 	[_window addSubview:_viewController.view];
 	[_window makeKeyAndVisible];
 	
-	// play lock sound
-	AudioServicesPlaySystemSound(1100);
+	NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:@"/private/var/mobile/Library/Preferences/com.apple.springboard.plist"];
+	
+	if ((dict[@"lock-unlock"] == nil || [dict[@"lock-unlock"] boolValue]) && kCFCoreFoundationVersionNumber >= 847.20) {
+		// play lock sound
+		AudioServicesPlaySystemSound(1100);
+	}
 	
 	[self performSelector:@selector(exitMyself) withObject:nil afterDelay:1.0f];
 }
