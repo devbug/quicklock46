@@ -18,8 +18,12 @@
 	[_window addSubview:_viewController.view];
 	[_window makeKeyAndVisible];
 	
-	// play lock sound
-	AudioServicesPlaySystemSound(1100);
+	NSString *version = [[UIDevice currentDevice] systemVersion];
+
+	if ([version floatValue] >= 7.0) {
+		// play lock sound
+		AudioServicesPlaySystemSound(1100);
+	}
 	
 	[self performSelector:@selector(exitMyself) withObject:nil afterDelay:1.0f];
 }
